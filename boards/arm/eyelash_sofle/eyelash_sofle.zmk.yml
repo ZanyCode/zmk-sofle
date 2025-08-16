@@ -12,4 +12,5 @@ outputs:
   - ble
 siblings:
   - eyelash_sofle_left
+  - eyelash_sofle_leftt
   - eyelash_sofle_right
