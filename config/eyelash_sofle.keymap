@@ -92,7 +92,9 @@
         aumlupper: aumlupper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kt LEFT_ALT>;
+            bindings = 
+                <&macro_release &kp LEFT_SHIFT &kp RIGHT_SHIFT>,
+                <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_6 &kt LEFT_ALT>;
             label = "AUMLUPPER";
         };
 
@@ -106,7 +108,9 @@
         oumlupper: oumlupper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kt LEFT_ALT>;
+            bindings = 
+                <&macro_release &kp LEFT_SHIFT &kp RIGHT_SHIFT>,
+                <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kt LEFT_ALT>;
             label = "OUMLUPPER";
         };
 
