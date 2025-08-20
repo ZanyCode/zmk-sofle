@@ -91,12 +91,12 @@ layers:
   - KP 8
   - KP 9
   - F11
-  - HOME
+  - '&uumllower'
   - {type: held}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - END
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - (
