@@ -91,10 +91,10 @@ layers:
   - KP 8
   - KP 9
   - F11
-  - '&uumllower'
+  - {t: '&uumllower', s: '&uumlupper'}
   - {type: held}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&eszett'
   - HOME
   - END
   - '&mkp MB5'
@@ -103,8 +103,8 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - {t: '[', s: '{'}
-  - END
+  - {t: '&oumllower', s: '&oumlupper'}
+  - {t: '&aumllower', s: '&aumlupper'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
