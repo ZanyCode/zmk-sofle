@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP     &kp F7                 &kp F8             &kp F9          &kp F10       &kp F11           &kp F12
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP              &kp N7             &kp N8          &kp N9        &kp F11           &kp HOME
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_PARENTHESIS   &kp NUMBER_4       &kp N5          &kp NUMBER_6  &kp LEFT_BRACKET  &kp END
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp NUMBER_1       &kp NUMBER_2    &kp NUMBER_3  &kp F12           &kp DELETE
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp N0        &kp RIGHT_BRACE
+&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP     &kp F7                 &kp F8             &kp F9           &kp F10          &kp F11           &kp F12
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP              &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp F11           &kp HOME
+&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp END
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp F12           &kp DELETE
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp KP_NUMBER_0  &kp RIGHT_BRACE
             >;
 
             display-name = "layer1";
