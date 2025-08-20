@@ -77,7 +77,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
-                <&macro_release &kp LSFT &kp RSFT>,
+                <&macro_release &kp LEFT_SHIFT &kp RIGHT_SHIFT>,
                 <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kt LEFT_ALT>;
             label = "UUMLUPPER";
         };
