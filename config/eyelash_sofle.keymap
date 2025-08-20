@@ -41,7 +41,7 @@
         bindings = <&oumllower>, <&oumlupper>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT)>;
     };
 
     auml: auml {
@@ -50,7 +50,7 @@
         bindings = <&aumllower>, <&aumlupper>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT)>;
     };
 
     uuml: uuml {
@@ -59,7 +59,7 @@
         bindings = <&uumllower>, <&uumlupper>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
+        mods = <(MOD_LSFT)>;
     };
 
     behaviors {
