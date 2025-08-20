@@ -42,7 +42,7 @@
         uumllower: uumllower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(KP_NUMBER_0) &kp LA(KP_NUMBER_2) &kp LA(KP_NUMBER_5) &kp LA(KP_NUMBER_2)>;
+            bindings = <&kt LALT &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_2 &kt LEFT_ALT>;
             label = "UUMLLOWER";
         };
     };
