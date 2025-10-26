@@ -24,6 +24,10 @@
     trigger-period-ms = <16>;
 };
 
+ &mt {
+        flavor = "balanced";              // Prefer taps for fast typing
+};
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -121,10 +125,6 @@
             bindings = <&kt LALT &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kt LEFT_ALT>;
             label = "ESZETT";
         };
-    };
-
-    &mt {
-        flavor = "balanced";              // Prefer taps for fast typing
     };
 
     keymap {
