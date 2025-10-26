@@ -123,6 +123,10 @@
         };
     };
 
+    &mt {
+        flavor = "balanced";              // Prefer taps for fast typing
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
