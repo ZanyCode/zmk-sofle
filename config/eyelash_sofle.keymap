@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "zmk-helpers/key-labels/sofle.h"
 
-
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
@@ -63,16 +62,15 @@
     };
 
     behaviors {
-          hm_l: homerow_mods_left {
+        hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>,  <&kp>;
+            bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;
         };
@@ -86,15 +84,14 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;
         };
 
-
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
+
         hm_shift_l: hm_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -104,8 +101,8 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
+
             // hold-trigger-on-release;
         };
 
@@ -118,8 +115,8 @@
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
+
             // hold-trigger-on-release;
         };
     };
@@ -189,11 +186,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &kp NUMBER_1    &kp NUMBER_2    &kp N3            &kp N4              &kp N5    &kp UP_ARROW     &kp NUMBER_6  &kp N7               &kp N8             &kp N9           &kp N0              &kp BACKSPACE
-&kp CAPSLOCK  &kp Q           &kp W           &kp E             &kp R               &kp T     &kp DOWN_ARROW   &kp Y         &kp U                &kp I              &kp O            &kp P               &kp BSLH
+&kp GRAVE     &kp NUMBER_1      &kp NUMBER_2      &kp N3                    &kp N4                &kp N5    &kp UP_ARROW     &kp NUMBER_6  &kp N7                 &kp N8                     &kp N9             &kp N0                &kp BACKSPACE
+&kp CAPSLOCK  &kp Q             &kp W             &kp E                     &kp R                 &kp T     &kp DOWN_ARROW   &kp Y         &kp U                  &kp I                      &kp O              &kp P                 &kp BSLH
 &kp TAB       &hm_l LEFT_GUI A  &hm_l LEFT_ALT S  &hm_shift_l LEFT_SHIFT D  &hm_l LEFT_CONTROL F  &kp G     &kp LEFT_ARROW   &kp H         &hm_r RIGHT_CONTROL J  &hm_shift_r RIGHT_SHIFT K  &hm_r RIGHT_ALT L  &hm_r RIGHT_GUI SEMI  &kp APOS
-&kp ESCAPE    &kp Z           &kp X           &kp C             &kp V               &kp B     &kp RIGHT_ARROW  &kp N         &kp M                &kp COMMA          &kp DOT          &kp FSLH            &kp DELETE
-&kp C_MUTE    &kp RIGHT_ALT   &kp HOME        &kp END           &kp SPACE           &mo 1     &kp ENTER        &mo 2         &kp SPACE            &kp ENTER          &kp MINUS        &kp EQUAL
+&kp ESCAPE    &kp Z             &kp X             &kp C                     &kp V                 &kp B     &kp RIGHT_ARROW  &kp N         &kp M                  &kp COMMA                  &kp DOT            &kp FSLH              &kp DELETE
+&kp C_MUTE    &kp RIGHT_ALT     &kp HOME          &kp END                   &kp SPACE             &mo 1     &kp ENTER        &mo 2         &kp SPACE              &kp ENTER                  &kp MINUS          &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -202,11 +199,11 @@
 
         layer_1 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &kp F6           &kp F7                 &kp F8             &kp F9           &kp F10          &kp F11          &kp F12
-&trans      &kp GRAVE        &kp F6          &kp F6           &kp F6           &kp F6             &kp F6           &kp PG_UP              &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp F11          &uuml
-&trans      &kp TILDE        &eszett         &kp HOME         &kp END          &kp F6             &kp F6           &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &ouml            &auml
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp F6           &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp F12          &kp DELETE
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &kp F6           &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp KP_NUMBER_0  &kp RIGHT_BRACE
+&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &kp F6  &kp F7                 &kp F8             &kp F9           &kp F10          &kp F11          &kp F12
+&trans      &kp GRAVE        &kp F6          &kp F6           &kp F6           &kp F6             &kp F6  &kp PG_UP              &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp F11          &uuml
+&trans      &kp TILDE        &eszett         &kp HOME         &kp END          &kp F6             &kp F6  &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &ouml            &auml
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp F6  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp F12          &kp DELETE
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &kp F6  &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp KP_NUMBER_0  &kp RIGHT_BRACE
             >;
 
             display-name = "layer1";
@@ -214,13 +211,12 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &trans      &trans          &trans          &trans           &trans    &kp F6           &kp F6  &kp F7    &kp F8      &kp F9     &kp F10      &trans
-&trans     &trans      &trans          &kp UP_ARROW    &trans           &trans    &kp F6           &trans  &trans    &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &kp F6           &trans  &kp HOME  &trans      &kp END    &kp LBRC     &kp RBRC
-&trans     &sys_reset  &trans          &bootloader     &trans           &trans    &kp F6           &trans  &trans    &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans      &trans          &trans          &trans           &trans    &kp F6           &trans  &trans    &trans      &trans     &trans
+&kp TILDE  &trans  &trans          &trans          &trans           &trans    &kp F6  &kp F6  &kp F7    &kp F8   &kp F9   &kp F10    &trans
+&trans     &trans  &trans          &kp UP_ARROW    &trans           &trans    &kp F6  &trans  &trans    &kp F11  &kp F12  &kp UNDER  &kp PLUS
+&trans     &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &kp F6  &trans  &kp HOME  &trans   &kp END  &kp LBRC   &kp RBRC
+&trans     &trans  &trans          &trans          &trans           &trans    &kp F6  &trans  &trans    &trans   &trans   &trans     &trans
+&trans     &trans  &trans          &trans          &trans           &trans    &kp F6  &trans  &trans    &trans   &trans   &trans
             >;
-
         };
 
         layer_3 {
