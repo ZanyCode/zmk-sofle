@@ -32,14 +32,6 @@
 };
 
 / {
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
     ouml: ouml {
         compatible = "zmk,behavior-mod-morph";
         label = "OUML";
@@ -215,7 +207,6 @@
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_2 {
@@ -227,7 +218,6 @@
 &trans     &trans      &trans          &trans          &trans           &trans    &mkp LCLK        &trans  &trans    &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
