@@ -108,8 +108,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
-  - RGB EFF
-  - RGB EFR
+  - RGB TOG BAT LEFT
+  - RGB TOG BAT RIGHT
   - RGB SPI
   - F6
   - )
