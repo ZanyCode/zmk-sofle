@@ -93,17 +93,17 @@ layers:
   - F11
   - {t: '&uumllower', s: '&uumlupper'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - '&eszett'
-  - HOME
-  - END
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - F6
   - F6
   - (
-  - KP 4
-  - KP 5
-  - KP 6
-  - {t: '&oumllower', s: '&oumlupper'}
+  - {t: KP 4, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: KP 5, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP 6, h: '$$mdi:apple-keyboard-option$$'}
+  - RIGHT GUI
   - {t: '&aumllower', s: '&aumlupper'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
@@ -165,10 +165,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
-  - END
-  - '{'
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - RGUI
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
