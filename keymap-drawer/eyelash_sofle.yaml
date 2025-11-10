@@ -93,23 +93,23 @@ layers:
   - F11
   - {t: '&uumllower', s: '&uumlupper'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - '&eszett'
-  - HOME
-  - END
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - F6
   - F6
   - (
-  - KP 4
-  - KP 5
-  - KP 6
-  - {t: '&oumllower', s: '&oumlupper'}
+  - {t: KP 4, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: KP 5, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP 6, h: '$$mdi:apple-keyboard-option$$'}
+  - RIGHT GUI
   - {t: '&aumllower', s: '&aumlupper'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
-  - RGB EFF
-  - RGB EFR
+  - RGB TOG BAT LEFT
+  - RGB TOG BAT RIGHT
   - RGB SPI
   - F6
   - )
@@ -165,10 +165,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F6
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
-  - END
-  - '{'
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - RGUI
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,72 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  gaming:
+  - {t: '`', s: '~'}
+  - '1'
+  - '2'
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - '6'
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - $$mdi:arrow-up-bold$$
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - ':'
+  - {t: '''', s: '"'}
+  - $$mdi:keyboard-esc$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-control$$
+  - LEFT WIN
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
+  - layer1
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '2'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  unused:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,3 +325,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [59, 57]
+  k: {t: gaming, h: toggle}
